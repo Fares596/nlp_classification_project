@@ -73,14 +73,14 @@ def load_model():
 model = load_model()
 
 # --- 4. USER INTERFACE ---
-st.title(" AI Complaint Classifier")
+st.title("🏦 AI Complaint Classifier")
 st.markdown("""
 This model automatically analyzes financial complaints to route them to the correct department.
 **Supported Categories:** *Mortgage, Credit Card, Debt Collection, Credit Reporting, Student Loan...*
 """)
 
 # Text Input Area
-user_input = st.text_area("Paste a client complaint here:", height=150, placeholder="Ex: I have a problem with my credit report...")
+user_input = st.text_area("Type your complaint here:", height=150, placeholder="Ex: I have a problem with my credit report...")
 
 if st.button("Analyze Complaint"):
     if user_input:
